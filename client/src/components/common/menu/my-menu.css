@@ -1,0 +1,4 @@
+.active {
+    color: var(--blue) !important;
+    font-weight: bold !important;
+}

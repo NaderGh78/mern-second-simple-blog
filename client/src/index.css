@@ -1,0 +1,82 @@
+:root {
+  --gray: #999;
+  --blue: #712cf9;
+  --border: .1rem solid rgba(0, 0, 0, .2);
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+
+a,
+a:hover {
+  text-decoration: none !important;
+  transition: all .2s;
+}
+
+.my-form {
+  /* width: 50%;
+  margin: 80px auto 50px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.my-form form {
+  width: 500px;
+}
+
+.my-form form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  margin: 30px 0;
+  font-size: 15px;
+  background-color: var(--blue);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: all .2s;
+}
+
+.my-form form button:hover {
+  background-color: #8f64e3;
+}
+
+.react-confirm-alert-overlay {
+  background: rgba(0, 0, 0, .3) !important;
+  animation: react-confirm-alert-fadeIn 0.01s 0.01s forwards !important;
+  z-index: 99999999999 !important;
+}
+
+.react-confirm-alert-body {
+  width: 500px !important;
+  padding: 34px !important;
+  background-color: #e2e3e5 !important;
+  text-align: center !important;
+  border-radius: 6px !important;
+}
+
+.react-confirm-alert-button-group {
+  justify-content: center !important;
+}
+
+.react-confirm-alert-button-group>button {
+  background: #222 !important;
+  font-size: 17px !important;
+}
+
+@media only screen and (max-width:576px) {
+  .my-form form {
+    width: 400px;
+  }
+
+  .footer {
+    font-size: 18px !important;
+  }
+}
