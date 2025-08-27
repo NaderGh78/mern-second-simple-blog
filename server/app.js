@@ -15,7 +15,15 @@ const cors = require("cors");
 // init app
 const app = express();
 
-app.use(cors());
+const corsOptions = {
+    origin: [
+        "http://localhost:3000", // local React 
+        "https://joori-blog-1.onrender.com" // production frontend
+    ],
+    credentials: true
+};
+
+app.use(cors(corsOptions));
 
 //apply middlewares
 app.use(express.json());
